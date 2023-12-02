@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib import admin
 
 # Create your models here.
 class BaseModel(models.Model):
@@ -64,4 +65,8 @@ class Collection(BaseModel):
     card = models.ForeignKey(PokemonCard, blank=True, null=True, on_delete=models.CASCADE)
     trainer = models.ForeignKey(Trainer, blank=True, null=True, on_delete=models.CASCADE)
     Collection_date = models.DateField()
+
+class PokemonAdmin(admin.ModelAdmin):
+    list_display = ("name", "rarity")
+    search_fields = ("name",)
     
