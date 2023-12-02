@@ -66,7 +66,7 @@ class Collection(BaseModel):
     trainer = models.ForeignKey(Trainer, blank=True, null=True, on_delete=models.CASCADE)
     Collection_date = models.DateField()
 
-class PokemonAdmin(admin.ModelAdmin):
+""" class PokemonAdmin(admin.ModelAdmin):
     list_display = ("name", "rarity")
     search_fields = ("name",)
-    
+     """
