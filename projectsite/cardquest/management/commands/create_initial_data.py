@@ -11,10 +11,17 @@ class Command(BaseCommand):
 
     def create_pokemon_cards(self):
         # Create Pokemon Card instances
-        card1 = PokemonCard(name="Pikachu", rarity="Rare",hp=60, card_type="Electric", attack="Thunder Shock",
-                    description="A mouse-like pokemon that can generate electricity.",
-                    weakness="Ground", card_number=25, release_date="1996-02-27", evolution_stage="Basic",
-                    abilities="Static")
+        card1 = PokemonCard(name="Pikachu", 
+                            rarity="Rare", 
+                            hp=60, 
+                            card_type="Electric", 
+                            attack="Thunder Shock",
+                            description="A mouse-like pokemon that can generate electricity.",
+                            weakness="Ground", 
+                            card_number=25, 
+                            release_date="1999-01-09", 
+                            evolution_stage="Basic",
+                            abilities="Static")
         
         card1.save()
         self.stdout.write(self.style.SUCCESS('Successfully created Pokemon cards')) #<-- display success message
