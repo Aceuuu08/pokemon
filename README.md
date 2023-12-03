@@ -1,5 +1,5 @@
-pokemon
+#LOTA, ARVIN CLARK T.
+##BSCS3 - B1
 
-LOTA, ARVIN CLARK T.
-BSCS3 - B1
+###Pokemon_CardQuest
 
